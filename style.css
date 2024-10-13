@@ -416,8 +416,6 @@ header {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
-    transition: transform 0.1s ease-in-out, background-color 0.1s ease, z-index 0.1s ease;
-    transition: max-height 0.1s ease, transform 0.1s ease;
 }
 
 /* Project Info */
