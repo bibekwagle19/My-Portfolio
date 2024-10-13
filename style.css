@@ -392,7 +392,7 @@ header {
     background-color: #222;
     padding: 20px;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease, z-index 0.3s ease;
+    transition: transform 0.1s ease-in-out, background-color 0.1s ease, z-index 0.1s ease;
     text-align: center;
     color: #fff;
     text-decoration: none;
@@ -405,7 +405,7 @@ header {
     z-index: 1;
     overflow: hidden;
     max-height: 400px;
-    transition: max-height 0.3s ease, transform 0.3s ease;
+    transition: max-height 0.1s ease, transform 0.1s ease;
 }
 
 /* Image with fixed aspect ratio */
