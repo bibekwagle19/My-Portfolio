@@ -105,7 +105,7 @@ header {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background-image: url('../Images/bbk.jpg');
+    background-image: url('Images/bbk.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
