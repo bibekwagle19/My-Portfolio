@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibek Wagle - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Bibek Wagle</div>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Hello! I'm <span class="highlight">Bibek Wagle</span></h2>
+            <p class="animated-text">Computer Science Student</p>
+            <div class="buttons">
+                <a href="../resume.pdf" target="_blank" class="btn">Download CV</a>
+                <a href="https://github.com/bibekwagle19" target="_blank" class="btn">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <!-- Left Section: Profile Image and Basic Info -->
+                <div class="profile-info">
+                    <img src="../Images/about-me.png" alt="Bibek Wagle" class="profile-image">
+                    <h3>Bibek Wagle</h3>
+                    <p>Bachelor in Computer Science</p>
+                    <p>GPA: 3.6/4</p>
+                    <p>Dallas, Tx</p>
+                </div>
+
+                <!-- Right Section: About Me Text -->
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>As a Computer Science student with a comprehensive background in software development and data
+                        analysis, I bring expertise in Python, SQL, C, C++, JavaScript, Java, HTML, Power BI, and machine learning. My
+                        technical
+                        acumen, combined with a passion for problem-solving, has enabled me to deliver innovative solutions across various
+                        projects. I excel in data visualization, transforming raw data into actionable insights, and crafting solutions that
+                        drive strategic business decisions.</p>
+                    <p>With a relentless commitment to learning and growth, I consistently push the boundaries of my technical skills and
+                        knowledge.My goal is to harness my proficiency in technology and data-driven strategies to contribute meaningfully
+                        to
+                        forward-thinking organizations and help shape the future of innovation."</p>
+
+                    <!-- Centered Skills Section -->
+                    <h4 style="text-align: center;">Skills</h4>
+                    <div class="skill" style="text-align: center;">
+                        <label>Python</label>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill" style="text-align: center;">
+                        <label>SQL</label>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill" style="text-align: center;">
+                        <label>Data Visualization</label>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill" style="text-align: center;">
+                        <label>Statistical Analysis</label>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill" style="text-align: center;">
+                        <label>Machine Learning</label>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                        <div class="skill" style="text-align: center;">
+                        <label>Web Development</label>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <!-- Projects I'm Currently Working On -->
+            <div class="projects-current">
+                <h2 class="section-title">Projects I'm Currently Working On</h2>
+                <div class="project-grid">
+                    <a class="project-card">
+                        <img src="../Images/brainTu.png" alt="Brain tumor using machine learning.">
+                        <div class="project-info">
+                            <h3>Brain tumor Detector using machine learning.</h3>
+                            <p class="brief">Developing a machine learning model to accurately detect and classify brain tumors, leveraging advanced data processing,
+                            feature extraction, and classification techniques to assist in medical diagnostics..</p>
+                            <p class="more-detail">This model processes MRI scans to identify and classify tumor types, improving early diagnosis and treatment precision.
+                            </p>
+                        </div>
+                        </p>
+                    </a>
+                    <a
+                        class="project-card">
+                        <img src="../Images/hydrant.png" alt="Fire Hydrant Maintenance System">
+                        <div class="project-info">
+                            <h3>Fire Hydrant Maintenance System</h3>
+                            <p class="brief">Developing an automated Fire Hydrant Maintenance System to reduce manual labor for fire departments and water
+                            departments.</p>
+                            <p class="more-detail">Designing a device with sensors for pressure, flow, and valve position to monitor hydrant conditions in real-time.
+                            Implemented automated reporting and maintenance features to ensure hydrants remain operational.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projects I've Completed -->
+            <div class="projects-completed">
+                <h2 class="section-title">Projects I've Completed</h2>
+                <div class="project-grid">
+                    <a 
+                    class="project-card">
+                        <img src="../Images/powerbi.jpg" alt="Sales Insights USing Power BI">
+                    <div class="project-info">
+                        <h3>Sales Insights Using Power BI</h3>
+                        <p class="brief">Developed interactive sales dashboards using Power BI to visualize key performance indicators (KPIs) such as revenue,
+                        profit margins, and sales trends. Integrated and transformed large datasets, created custom DAX measures, and
+                        implemented filters and slicers for dynamic reporting.</p>
+                        <p class="more-detail">Provided actionable insights on sales performance, customer behavior, and regional trends to drive data-driven
+                        decision-making. Demonstrated expertise in data visualization, business intelligence, and report automation.</p>
+                    </div>
+                    </a>
+                    <a class="project-card">
+                        <img src="../Images/sql.png" alt="Database">
+                        <div class="project-info">
+                            <h3>Doctoral Database</h3>
+                            <p class="brief">Developed and implemented a relational database for managing PhD students, instructors,
+                                courses, and grants using MySQL.</p>
+                            <p class="more-detail">Designed entity-relationship diagrams and relational schemas, ensuring data integrity
+                                through foreign key constraints.
+                                Created and executed complex SQL queries to retrieve data for student funding, research areas, and course
+                                assignments.
+                                Demonstrated proficiency in database design, query optimization, and enforcing referential integrity.</p>
+                        </div>
+                    </a>
+                    <a 
+                        class="project-card">
+                        <img src="../Images/neuralNetwork.png" alt="Neural Networks">
+                        <div class="project-info">
+                            <h3>Neural Network Classification</h3>
+                            <p class="brief">Developed and tested neural networks using Keras to classify data from UCI datasets. Implemented a customizable neural
+                            network function with flexible input parameters for layers, units, and training epochs.</p>
+                            <p class="more-detail">Applied data normalization, configured fully connected layers with sigmoid activation, and utilized the Adam optimizer.
+                            Achieved classification accuracy results between 87% and 89% on the different dataset using multiple training configurations.</p>
+                        </div>
+                    </a>
+                    <a class="project-card">
+                        <img src="../Images/wordSearchGame.png" alt="Word Search Problem">
+                        <div class="project-info">
+                            <h3>Word Search problem</h3>
+                            <p class="brief">Developed a dynamic multiplayer word search game supporting 2-5 player modes, implementing
+                                real-time chat and live
+                                scoreboard updates to enhance user interaction.</p>
+                            <p class="more-detail">Optimized game logic for efficient word selection and scoring, ensuring a seamless gaming
+                                experience. Enabled smooth
+                                game recovery after player disconnections to maintain uninterrupted gameplay.</p>
+                        </div>
+                    </a>
+                    <a 
+                        class="project-card">
+                        <img src="../Images/eightpuzzle.png" alt="Expense 8-Puzzle">
+                        <div class="project-info">
+                            <h3>8-puzzle solver</h3>
+                            <p class="brief">Developed an 8-puzzle solver using Python, implementing multiple Uninformed & Informed Search algorithms including A*,
+                            BFS, DFS, UCS, Greedy Search, and IDS.</p>
+                            <p class="more-detail">Structured the code into modular classes, ensuring efficient state handling and node expansion. Enabled flexible search
+                            method selection via command-line inputs, with options to output search traces.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2>Contact Me</h2>
+                <p><i class="fas fa-envelope"></i> bibekwagle19@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 8573769140</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/bibek.wagle.96" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/BibekWagle20" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/bibekwagle_1" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/bibekwagle19" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/bibekwagle19" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="resume.pdf" target="_blank" class="btn-contact" download>Download CV</a>
+            </div>
+            <div class="contact-form">
+                <form name="contact-form"
+                    action="https://script.google.com/macros/s/AKfycbzCzb96IfHi1-odNEVjLDs7Ofdca6lPV1rh3sSLW4rwKXxlDBBHtPOAu-ESOiNzHKuLXA/exec">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bibek Wagle. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
