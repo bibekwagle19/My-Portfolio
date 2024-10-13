@@ -392,7 +392,7 @@ header {
     background-color: #222;
     padding: 20px;
     border-radius: 10px;
-    transition: transform 0.1s ease-in-out, background-color 0.1s ease, z-index 0.1s ease;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease, z-index 0.3s ease;
     text-align: center;
     color: #fff;
     text-decoration: none;
@@ -405,7 +405,7 @@ header {
     z-index: 1;
     overflow: hidden;
     max-height: 400px;
-    transition: max-height 0.1s ease, transform 0.1s ease;
+    transition: max-height 0.3s ease, transform 0.3s ease;
 }
 
 /* Image with fixed aspect ratio */
@@ -416,6 +416,8 @@ header {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
+    transition: transform 0.1s ease-in-out, background-color 0.1s ease, z-index 0.1s ease;
+    transition: max-height 0.1s ease, transform 0.1s ease;
 }
 
 /* Project Info */
@@ -440,7 +442,6 @@ header {
 /* Hover effect to show more details */
 .project-card:hover {
     transform: scale(1.05);
-
     background-color: #333;
     max-height: 100%;
     max-width: 100%;
