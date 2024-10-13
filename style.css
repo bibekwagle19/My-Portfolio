@@ -439,7 +439,7 @@ header {
 
 /* Hover effect to show more details */
 .project-card:hover {
-    transform: scale(1.20);
+    transform: scale(1.05);
 
     background-color: #333;
     max-height: 100%;
