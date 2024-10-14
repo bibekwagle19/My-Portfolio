@@ -89,7 +89,7 @@ header {
     }
 
     .navbar.expanded .nav-links ul {
-        height: 17vh;
+        height: fit-content;
     }
 
     .nav-links ul li {
@@ -104,105 +104,132 @@ header {
 
 /* Hero Section */
 .hero {
+    margin: 0;
+    padding: 0;
     height: 100vh;
-    background-image: url('Images/bbk.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    position: relative;
+    font-family: 'Poppins', sans-serif;
     overflow: hidden;
-}
-
-/* Optional: Overlay to darken the background image for better contrast */
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    background: url('./Images/bbk.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
 }
 
 .hero-content {
+    text-align: center;
     position: relative;
-    z-index: 2;
+    z-index: 1;
+}
+
+/* Glowing Text Styling */
+.glowing-text {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+    animation: fadeInText 2s ease forwards, glowAnimation 5s ease-in-out infinite;
+}
+
+/* Highlight "Bibek Wagle" */
+.highlight {
+    color: #00ffcc;
+    font-weight: bold;
+    text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc, 0 0 40px #00ffcc;
+}
+
+/* Subtext */
+.animated-subtext {
+    font-size: 1.5em;
+    color: #fff;
+    opacity: 0;
+    margin-top: 20px;
+    animation: fadeInSubtext 3s ease 2s forwards;
+}
+
+/* Fade-in Animations */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInSubtext {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Glowing Button Styling */
+.glowing-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    color: #fff;
+    background-color: #111;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    z-index: 1;
+    margin: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.glowing-btn:hover {
+    background-color: #0b72ec;
+    box-shadow: 0 0 30px rgba(11, 114, 236, 0.7), 0 0 60px rgba(11, 114, 236, 0.4);
     color: #fff;
 }
 
-
-.hero-content h2 {
-    font-size: 48px;
-    margin-bottom: 10px;
+.glowing-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    transform: rotate(45deg);
+    z-index: -1;
 }
 
-.hero-content span.highlight {
-    color: #f0b849;
+.glowing-btn:hover::before {
+    top: -70%;
+    left: -70%;
+    width: 300%;
+    height: 300%;
 }
 
-.hero-content p {
-    font-size: 24px;
-    margin-bottom: 20px;
+.glowing-btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -2;
+    filter: blur(10px);
 }
 
-.buttons .btn {
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid #f0b849;
-    color: #f0b849;
-    font-weight: bold;
-    margin-right: 10px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.buttons .btn:hover {
-    background-color: #f0b849;
-    color: #111;
-}
-
-/* Animation for Computer Science Student */
-.animated-text {
-    font-size: 32px;
-    font-weight: 600;
-    color: #f0b849;
-    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid #f0b849;
-    box-sizing: border-box;
-}
-
-/* Typing animation */
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-/* Blinking cursor animation with stop */
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: #f0b849;
-    }
-}
-
-.animated-text.done-typing {
-    border-right: none;
+/* Styling for Hero Section Buttons */
+.hero-content .buttons {
+    text-align: center;
+    margin-top: 40px;
 }
 
 /* About Me Section */
@@ -219,8 +246,8 @@ header {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 17vh 20px;
-    padding-bottom: 5vh;
+    padding: 5vh 20px;
+    padding-top: 20vh;
 }
 
 /* About Content */
