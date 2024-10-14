@@ -104,21 +104,31 @@ header {
 
 /* Hero Section */
 .hero {
-    margin: 0;
-    padding: 0;
     height: 100vh;
+    background-image: url('./Images/bbk.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    position: relative;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-    background: url('./Images/bbk.jpg') no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
 .hero-content {
-    text-align: center;
     position: relative;
     z-index: 1;
 }
