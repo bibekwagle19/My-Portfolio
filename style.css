@@ -105,7 +105,7 @@ header {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background-image: url('./Images/bbk.png');
+    background-image: url('./Images/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -257,7 +257,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 5vh 20px;
-    padding-top: 20vh;
+    padding-top: 16vh;
 }
 
 /* About Content */
