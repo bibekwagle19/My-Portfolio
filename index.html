@@ -2,25 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bibek Wagle - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <!-- Navigation Bar -->
     <header>
         <nav class="navbar">
-            <div class="logo">Bibek Wagle</div>
+            <div class="logo">
+                <a href="#home">Bibek Wagle</a>
+            </div>
             <div class="nav-links" id="navLinks">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
                 </ul>
             </div>
             <div class="menu-icon" onclick="toggleMenu()">
@@ -30,18 +36,34 @@
             </div>
         </nav>
     </header>
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="glowing-text">
-                Hi, I am <span class="highlight">Bibek Wagle</span>
-            </h1>
-            <h2 class="animated-subtext">Welcome to my portfolio</h2>
+            <div class="hero-image">
+                <img src="Images/my3.png" alt="Bibek Wagle" />
+            </div>
+            <div class="intro-section">
+                <h1 class="glowing-text">Hi, I am <span>Bibek Wagle</span></h1>
+                <h2 class="hero-tagline">Computer Science Student | Data Analyst | Machine Learning Enthusiast</h2>
     
-            <!-- Button Container -->
-            <div class="buttons">
-                <a href="resume.pdf" target="_blank" class="btn glowing-btn">Download CV</a>
-                <a href="https://github.com/bibekwagle19" class="btn glowing-btn">Github</a>
+                <p class="short-about">
+                    I'm passionate about building data-driven solutions and innovative
+                    software applications. With experience in Python, ML, and full-stack
+                    development, I love turning complex challenges into impactful results.
+                </p>
+    
+                <ul class="quick-stats">
+                    <li><strong>10+</strong> Completed Projects</li>
+                    <li><strong>5+</strong> Certifications</li>
+                    <li><strong>2+</strong> Years Experience</li>
+                </ul>
+    
+                <div class="buttons">
+                    <a href="resume.pdf" target="_blank" class="btn glowing-btn">Download CV</a>
+                    <a href="https://github.com/bibekwagle19" class="btn glowing-btn">GitHub</a>
+                    <a href="#about" class="btn glowing-btn">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
@@ -51,66 +73,70 @@
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
-                <!-- Left Section: Profile Image and Basic Info -->
                 <div class="profile-info">
-                    <img src="Images/about-me.png" alt="Bibek Wagle" class="profile-image">
+                    <img src="Images/about-me.png" alt="Bibek Wagle" class="profile-image" />
                     <h3>Bibek Wagle</h3>
                     <p>Bachelor in Computer Science</p>
                     <p>GPA: 3.43/4</p>
                     <p>Dallas, Tx</p>
                 </div>
-
-                <!-- Right Section: About Me Text -->
                 <div class="about-text">
                     <h2>About Me</h2>
-                    <p>As a Computer Science student with a comprehensive background in software development and data
-                        analysis, I bring expertise in Python, SQL, C, C++, JavaScript, Java, HTML, Power BI, and machine learning. My
-                        technical
-                        acumen, combined with a passion for problem-solving, has enabled me to deliver innovative solutions across various
-                        projects. I excel in data visualization, transforming raw data into actionable insights, and crafting solutions that
-                        drive strategic business decisions.</p>
-                    <p>With a relentless commitment to learning and growth, I consistently push the boundaries of my technical skills and
-                        knowledge.My goal is to harness my proficiency in technology and data-driven strategies to contribute meaningfully
-                        to
-                        forward-thinking organizations and help shape the future of innovation."</p>
+                    <p>
+                        I am a Computer Science student at the University of Texas at Arlington with a strong background in software
+                        development, data analysis, machine learning and Full stack development. My hands-on experience spans advanced Python, R, SQL, C++, and Java,
+                        as well as frameworks like TensorFlow and Keras, enabling me to tackle complex challenges—from building LSTM-based stock
+                        prediction models to designing high-accuracy classification pipelines. I’ve also developed dynamic, real-time
+                        multiplayer applications and normalized relational databases that handle large datasets efficiently. Proficient in data
+                        visualization tools such as Power BI, Tableau, and Seaborn, I excel at turning raw data into actionable insights and
+                        delivering impactful solutions.
+                    </p>
+                    <p>
+                        My commitment to continuous learning is reflected in professional certifications (including the Google Data Analytics
+                        Professional Certificate) and ongoing pursuits like the IBM Data Science Professional Certificate. Whether collaborating
+                        on full-stack web development or exploring cutting-edge ML techniques, I strive to drive meaningful outcomes that bridge
+                        technology and business objectives. My ultimate goal is to harness data-driven strategies and innovative software to
+                        shape the future of forward-thinking organizations—and, in the process, grow as a versatile, solutions-oriented
+                        technologist.
+                    </p>
 
                     <!-- Centered Skills Section -->
                     <h4 style="text-align: center;">Skills</h4>
                     <div class="skill" style="text-align: center;">
                         <label>Python</label>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 90%;"></div>
+                            <div class="skill-level" style="width: 90%"></div>
                         </div>
                     </div>
                     <div class="skill" style="text-align: center;">
                         <label>SQL</label>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 90%;"></div>
+                            <div class="skill-level" style="width: 90%"></div>
                         </div>
                     </div>
                     <div class="skill" style="text-align: center;">
                         <label>Data Visualization</label>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%;"></div>
+                            <div class="skill-level" style="width: 85%"></div>
                         </div>
                     </div>
                     <div class="skill" style="text-align: center;">
                         <label>Statistical Analysis</label>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%;"></div>
+                            <div class="skill-level" style="width: 85%"></div>
                         </div>
                     </div>
                     <div class="skill" style="text-align: center;">
                         <label>Machine Learning</label>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 80%;"></div>
+                            <div class="skill-level" style="width: 80%"></div>
                         </div>
-                        <div class="skill" style="text-align: center;">
+                    </div>
+                    <div class="skill" style="text-align: center;">
                         <label>Web Development</label>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 80%;"></div>
+                            <div class="skill-level" style="width: 80%"></div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -125,25 +151,35 @@
                 <h2 class="section-title">Projects I'm Currently Working On</h2>
                 <div class="project-grid">
                     <a class="project-card">
-                        <img src="Images/brainTu.png" alt="Brain tumor using machine learning.">
+                        <img src="Images/brainTu.png" alt="Brain tumor using machine learning." />
                         <div class="project-info">
-                            <h3>Brain tumor Detector using machine learning.</h3>
-                            <p class="brief">Developing a machine learning model to accurately detect and classify brain tumors, leveraging advanced data processing,
-                            feature extraction, and classification techniques to assist in medical diagnostics..</p>
-                            <p class="more-detail">This model processes MRI scans to identify and classify tumor types, improving early diagnosis and treatment precision.
+                            <h3>Brain Tumor Detector Using Machine Learning</h3>
+                            <p class="brief">
+                                Developing a machine learning model to accurately detect and
+                                classify brain tumors, leveraging advanced data processing,
+                                feature extraction, and classification techniques to assist in
+                                medical diagnostics.
+                            </p>
+                            <p class="more-detail">
+                                This model processes MRI scans to identify and classify tumor
+                                types, improving early diagnosis and treatment precision.
                             </p>
                         </div>
-                        </p>
                     </a>
-                    <a
-                        class="project-card">
-                        <img src="Images/hydrant.png" alt="Fire Hydrant Maintenance System">
+                    <a class="project-card">
+                        <img src="Images/hydrant.png" alt="Fire Hydrant Maintenance System" />
                         <div class="project-info">
                             <h3>Fire Hydrant Maintenance System</h3>
-                            <p class="brief">Developing an automated Fire Hydrant Maintenance System to reduce manual labor for fire departments and water
-                            departments.</p>
-                            <p class="more-detail">Designing a device with sensors for pressure, flow, and valve position to monitor hydrant conditions in real-time.
-                            Implemented automated reporting and maintenance features to ensure hydrants remain operational.</p>
+                            <p class="brief">
+                                Developing an automated Fire Hydrant Maintenance System to
+                                reduce manual labor for fire departments and water departments.
+                            </p>
+                            <p class="more-detail">
+                                Designing a device with sensors for pressure, flow, and valve
+                                position to monitor hydrant conditions in real-time. Implemented
+                                automated reporting and maintenance features to ensure hydrants
+                                remain operational.
+                            </p>
                         </div>
                     </a>
                 </div>
@@ -154,83 +190,123 @@
                 <h2 class="section-title">Projects I've Completed</h2>
                 <div class="project-grid">
                     <a class="project-card">
-                        <img src="Images/breastCancer.png" alt="Breast Cancer">
+                        <img src="Images/breastCancer.png" alt="Breast Cancer Detection" />
                         <div class="project-info">
                             <h3>Breast Cancer Detection</h3>
-                            <p class="brief">Designed a machine learning pipeline to classify breast cancer as benign or malignant, achieving
-                            98% accuracy.</p>
-                            <p class="more-detail">Implemented advanced classification algorithms, including Random Forest, Support Vector Ma-
-                            chine, KNN Classifier, Naive Bayes Classifier, and Neural Network Classifier for robust predictions.Visualized feature importance and data patterns using Seaborn and Matplotlib, enabling better
-                            interpretability of model predictions.</p>
+                            <p class="brief">
+                                Designed a machine learning pipeline to classify breast cancer
+                                as benign or malignant, achieving 98% accuracy.
+                            </p>
+                            <p class="more-detail">
+                                Implemented advanced classification algorithms, including Random
+                                Forest, Support Vector Machine, KNN Classifier, Naive Bayes
+                                Classifier, and Neural Network Classifier for robust
+                                predictions. Visualized feature importance and data patterns
+                                using Seaborn and Matplotlib, enabling better interpretability
+                                of model predictions.
+                            </p>
                         </div>
                     </a>
                     <a class="project-card">
-                        <img src="Images/stockMarket.png" alt="Stock Price">
+                        <img src="Images/stockMarket.png" alt="Stock Price" />
                         <div class="project-info">
                             <h3>Stock Price Prediction</h3>
-                            <p class="brief">Developed an LSTM-based deep learning model using TensorFlow to predict stock price trends.</p>
-                            <p class="more-detail">Preprocessed financial data with MinMax scaling, improving model training efficiency.
-                            Optimized training performance with EarlyStopping and learning rate reduction techniques.</p>
+                            <p class="brief">
+                                Developed an LSTM-based deep learning model using TensorFlow to
+                                predict stock price trends.
+                            </p>
+                            <p class="more-detail">
+                                Preprocessed financial data with MinMax scaling, improving model
+                                training efficiency. Optimized training performance with
+                                EarlyStopping and learning rate reduction techniques.
+                            </p>
                         </div>
                     </a>
-                    <a 
-                    class="project-card">
-                        <img src="Images/powerbi.jpg" alt="Sales Insights USing Power BI">
-                    <div class="project-info">
-                        <h3>Sales Insights Using Power BI</h3>
-                        <p class="brief">Developed interactive sales dashboards using Power BI to visualize key performance indicators (KPIs) such as revenue,
-                        profit margins, and sales trends. Integrated and transformed large datasets, created custom DAX measures, and
-                        implemented filters and slicers for dynamic reporting.</p>
-                        <p class="more-detail">Provided actionable insights on sales performance, customer behavior, and regional trends to drive data-driven
-                        decision-making. Demonstrated expertise in data visualization, business intelligence, and report automation.</p>
-                    </div>
+                    <a class="project-card">
+                        <img src="Images/powerbi.jpg" alt="Sales Insights USing Power BI" />
+                        <div class="project-info">
+                            <h3>Sales Insights Using Power BI</h3>
+                            <p class="brief">
+                                Developed interactive sales dashboards using Power BI to
+                                visualize key performance indicators (KPIs) such as revenue,
+                                profit margins, and sales trends.
+                            </p>
+                            <p class="more-detail">
+                                Integrated and transformed large datasets, created custom DAX
+                                measures, and implemented filters and slicers for dynamic
+                                reporting. Provided actionable insights on sales performance,
+                                customer behavior, and regional trends to drive data-driven
+                                decision-making.
+                            </p>
+                        </div>
                     </a>
                     <a class="project-card">
-                        <img src="Images/sql.png" alt="Database">
+                        <img src="Images/sql.png" alt="Doctoral Database" />
                         <div class="project-info">
                             <h3>Doctoral Database</h3>
-                            <p class="brief">Developed and implemented a relational database for managing PhD students, instructors,
-                                courses, and grants using MySQL.</p>
-                            <p class="more-detail">Designed entity-relationship diagrams and relational schemas, ensuring data integrity
-                                through foreign key constraints.
-                                Created and executed complex SQL queries to retrieve data for student funding, research areas, and course
-                                assignments.
-                                Integrated the system with PHP, HTML, and CSS for a smooth user interface, ensuring data integrity and optimized
-                                performance.</p>
-                        </div>
-                    </a>
-                    <a 
-                        class="project-card">
-                        <img src="Images/neuralNetwork.png" alt="Neural Networks">
-                        <div class="project-info">
-                            <h3>Neural Network Classification</h3>
-                            <p class="brief">Developed and tested neural networks using Keras to classify data from UCI datasets. Implemented a customizable neural
-                            network function with flexible input parameters for layers, units, and training epochs.</p>
-                            <p class="more-detail">Applied data normalization, configured fully connected layers with sigmoid activation, and utilized the Adam optimizer.
-                            Achieved classification accuracy results between 87% and 89% on the different dataset using multiple training configurations.</p>
+                            <p class="brief">
+                                Developed and implemented a relational database for managing PhD
+                                students, instructors, courses, and grants using MySQL.
+                            </p>
+                            <p class="more-detail">
+                                Designed entity-relationship diagrams and relational schemas,
+                                ensuring data integrity through foreign key constraints. Created
+                                and executed complex SQL queries to retrieve data for student
+                                funding, research areas, and course assignments. Integrated the
+                                system with PHP, HTML, and CSS for a smooth user interface,
+                                ensuring data integrity and optimized performance.
+                            </p>
                         </div>
                     </a>
                     <a class="project-card">
-                        <img src="Images/wordSearchGame.png" alt="Word Search Problem">
+                        <img src="Images/neuralNetwork.png" alt="Neural Networks" />
                         <div class="project-info">
-                            <h3>Word Search problem</h3>
-                            <p class="brief">Developed a dynamic multiplayer word search game supporting 2-5 player modes, implementing
-                                real-time chat and live
-                                scoreboard updates to enhance user interaction.</p>
-                            <p class="more-detail">Optimized game logic for efficient word selection and scoring, ensuring a seamless gaming
-                                experience. Enabled smooth
-                                game recovery after player disconnections to maintain uninterrupted gameplay.</p>
+                            <h3>Neural Network Classification</h3>
+                            <p class="brief">
+                                Developed and tested neural networks using Keras to classify
+                                data from UCI datasets.
+                            </p>
+                            <p class="more-detail">
+                                Implemented a customizable neural network function with flexible
+                                input parameters for layers, units, and training epochs.
+                                Applied data normalization, configured fully connected layers
+                                with sigmoid activation, and utilized the Adam optimizer.
+                                Achieved classification accuracy between 87% and 89%.
+                            </p>
                         </div>
                     </a>
-                    <a 
-                        class="project-card">
-                        <img src="Images/eightpuzzle.png" alt="Expense 8-Puzzle">
+                    <a class="project-card">
+                        <img src="Images/wordSearchGame.png" alt="Word Search Problem" />
                         <div class="project-info">
-                            <h3>8-puzzle solver</h3>
-                            <p class="brief">Developed an 8-puzzle solver using Python, implementing multiple Uninformed & Informed Search algorithms including A*,
-                            BFS, DFS, UCS, Greedy Search, and IDS.</p>
-                            <p class="more-detail">Structured the code into modular classes, ensuring efficient state handling and node expansion. Enabled flexible search
-                            method selection via command-line inputs, with options to output search traces.</p>
+                            <h3>Word Search Problem</h3>
+                            <p class="brief">
+                                Developed a dynamic multiplayer word search game supporting 2-5
+                                player modes, implementing real-time chat and live scoreboard
+                                updates to enhance user interaction.
+                            </p>
+                            <p class="more-detail">
+                                Optimized game logic for efficient word selection and scoring,
+                                ensuring a seamless gaming experience. Enabled smooth game
+                                recovery after player disconnections to maintain uninterrupted
+                                gameplay.
+                            </p>
+                        </div>
+                    </a>
+                    <a class="project-card">
+                        <img src="Images/eightpuzzle.png" alt="8-puzzle solver" />
+                        <div class="project-info">
+                            <h3>8-Puzzle Solver</h3>
+                            <p class="brief">
+                                Developed an 8-puzzle solver using Python, implementing multiple
+                                Uninformed & Informed Search algorithms including A*, BFS, DFS,
+                                UCS, Greedy Search, and IDS.
+                            </p>
+                            <p class="more-detail">
+                                Structured the code into modular classes, ensuring efficient
+                                state handling and node expansion. Enabled flexible search
+                                method selection via command-line inputs, with options to output
+                                search traces.
+                            </p>
                         </div>
                     </a>
                 </div>
@@ -239,8 +315,7 @@
     </section>
 
     <!-- Contact Section -->
-
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <div class="container contact-container">
             <div class="contact-info">
                 <h2>Contact Me</h2>
@@ -261,11 +336,11 @@
             <div class="contact-form">
                 <form name="contact-form"
                     action="https://script.google.com/macros/s/AKfycbzCzb96IfHi1-odNEVjLDs7Ofdca6lPV1rh3sSLW4rwKXxlDBBHtPOAu-ESOiNzHKuLXA/exec">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
                     <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
-                    <input type="submit" value="Submit" id="submit">
+                    <input type="submit" value="Submit" id="submit" />
                 </form>
             </div>
         </div>
@@ -274,7 +349,6 @@
     <footer>
         <p>&copy; 2024 Bibek Wagle. All Rights Reserved.</p>
     </footer>
-
 
     <script src="index.js"></script>
 </body>
